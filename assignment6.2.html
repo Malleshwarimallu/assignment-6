@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+var arr = [10,20,30,40,50,60];
+arr.push(1, 2, 3, 4);
+ //document.getElementById("demo").innerHTML = arr;
+  arr.pop(arr[9]);
+  arr.pop(arr[8]);
+  arr.pop(arr[7]);
+  arr.pop(arr[6]);
+  //document.getElementById("demo").innerHTML = arr;
+    
+var i, text;
+   for (i = 0; i < 4; i++) {
+  text += arr[i] +"<br>";
+   document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

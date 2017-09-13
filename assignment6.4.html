@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Click the button to insert new cell(s) at the beginning of the table row.</p>
+
+<table id="MyTable">
+  <tr id="myRow">
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+  </tr>
+  <tr id="myRow">
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+  </tr>
+  <tr id="myRow">
+    <td>Row3 cell1</td>
+    <td>Row3 cell2</td>
+  </tr>
+</table>
+
+<button onclick="myFunction()">Try it</button>
+
+<script language="JavaScript">
+<!--
+var oRows = document.getElementById('MyTable').getElementsByTagName('tr');
+var iRowCount = oRows.length;
+
+alert('Your table has ' + iRowCount + ' rows.');
+
+
+function myFunction() {
+    var row = document.getElementById("myRow");
+    var x = row.insertCell(0);
+    x.innerHTML = "New cell";
+}
+
+</script>
+
+</body>
+</html>
